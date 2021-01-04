@@ -28,6 +28,11 @@ h3{
     font: 1.5em/1.5 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight:700;
 }
+
+.section{
+    text-align: center;
+}
+
 /* Pseudo-classes */
 a:link{
     color:mediumslateblue;
@@ -45,7 +50,7 @@ a:active {
     color: crimson;
 }
 
-/* Main styles */
+/*----- Main styles->main-header<- -----*/
 .main-header{
     margin-top: 0px;
     text-align: center;
@@ -81,6 +86,26 @@ a:active {
     text-align: center;
     padding: 10px;
     margin:auto
+}
+
+/*----- Main styles->Education<- -----*/
+
+.ed-usc,
+.ed-nl,
+.ed-ph{
+    width: 33%;
+}
+
+.ed-usc{
+    float: left;
+}
+
+.ed-nl{
+    float: left;
+}
+
+.ed-ph{
+    float: left;
 }
 
 /* Layout styles */
