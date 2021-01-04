@@ -9,7 +9,7 @@
     src: url(../fonts/Oswald-Regular.ttf) format("truetype");
 }
 
-/* base style */
+/* Base style */
 body{
     font: 1em/1.5 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	color: #463535;
@@ -28,7 +28,27 @@ h3{
     font: 1.5em/1.5 'Roboto Condensed', Helvetica, Arial, sans-serif;
     font-weight:700;
 }
+/* Pseudo-classes */
+a:link{
+    color:mediumslateblue;
+}
 
+a:visited{
+    color:steelblue;
+}
+
+a:hover {
+    color: navy;
+}
+
+a:active {
+    color: crimson;
+}
+
+/* Main styles */
+
+
+/* Layout styles */
 header{
     margin-top: 0;
 }
@@ -100,7 +120,6 @@ img.eric{
 }
 
 .main-nav li a{
-    color:mediumslateblue; 
     text-decoration: none;  
     padding-right: 20px;
     font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
