@@ -46,88 +46,62 @@ a:active {
 }
 
 /* Main styles */
-
-
-/* Layout styles */
-header{
-    margin-top: 0;
+.main-header{
+    margin-top: 0px;
+    text-align: center;
+    background: center/cover no-repeat url('../images/cmjpic.jpg');
 }
 
-footer{
+.Title-Name{
+    color:white;
+    font-size: 80px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.main-nav ul{
+    text-align: end;
+    font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.main-nav ul li{
+    display: inline;
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.main-footer{
     background-color:darkgray;
     text-align: center;
     padding: 10px;
     margin:auto
 }
 
+/* Layout styles */
+
 h1{ 
-    color:white;
-    font-size: 100px;
-    text-align: center;
     float: left;
     width: 40%;
-    padding: 50px;
-    margin-top: 60px;
-    margin-left: 60px;
-    margin-bottom: 100px;
-    margin-right: 50px;
 }
 
-img.eric{
-    display: none;
-    width: 50%;
-    border-radius: 10%;
+.container-intro{
+    width: 40%;
+    float: right;
 }
 
-
-
-/* class styles */
 .main-header{
     height: 100vh;
     padding-top: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    background-image: url('../images/cmjpic.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-.h2-introduction{
-    margin-top: 0;
-}
-
-.introduction{
-    margin-top: 0px;
-}
-
-.nav-container{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 30px;
-}
-
-.main-nav{
-    text-decoration: none;
-    list-style: none;/* 
-    padding: 30px 10px 30px 50%; */
-}
-
-
-.main-nav li{
-    display: inline;
-}
-
-.main-nav li a{
-    text-decoration: none;  
-    padding-right: 20px;
-    font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
-}
-
-.main-nav li a:hover{
-    color:navy;
 }
 
 /*-- Float clearfix --*/
