@@ -116,21 +116,9 @@ a:active {
     width: 25%;
 }
 
-.portfolio-photo{
-    width: 300px;
-    height: 300px;
-}
-
-.shoppingweb-photo{
-    width: 300px;
-    height: 300px;
-}
-
-.coffeeblog-photo{
-    width: 300px;
-    height: 300px;
-}
-
+.portfolio-photo,
+.shoppingweb-photo,
+.coffeeblog-photo,
 .photographic-photo{
     width: 300px;
     height: 300px;
