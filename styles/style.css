@@ -124,10 +124,19 @@ a:active {
     height: 300px;
 }
 
-/*----- Main styles->Skills<- -----*/
-
-/*----- Main styles->Languages<- -----*/
-
+/*----- Main styles->Skills & Languages<- -----*/
+.skill-section,
+.language-section{
+    width: 50%;
+}
+    /*----- Main styles->Skills<- -----*/
+    .skill-section{
+        float: left;
+    }
+    /*----- Main styles->Languages<- -----*/
+    .language-section{
+        float: right;
+    }
 /*----- Main styles->Hobby<- -----*/
 
 /* Layout styles */
