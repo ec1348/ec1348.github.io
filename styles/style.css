@@ -108,6 +108,40 @@ a:active {
     float: left;
 }
 
+/*----- Main styles->Experience<- -----*/
+
+/*----- Main styles->Projects<- -----*/
+.project-section{
+    float: left;
+    width: 25%;
+}
+
+.portfolio-photo{
+    width: 300px;
+    height: 300px;
+}
+
+.shoppingweb-photo{
+    width: 300px;
+    height: 300px;
+}
+
+.coffeeblog-photo{
+    width: 300px;
+    height: 300px;
+}
+
+.photographic-photo{
+    width: 300px;
+    height: 300px;
+}
+
+/*----- Main styles->Skills<- -----*/
+
+/*----- Main styles->Languages<- -----*/
+
+/*----- Main styles->Hobby<- -----*/
+
 /* Layout styles */
 
 h1{ 
