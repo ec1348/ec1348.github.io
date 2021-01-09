@@ -54,7 +54,11 @@ a:active {
 .main-header{
     margin-top: 0px;
     text-align: center;
-    background: center/cover no-repeat url('../images/cmjpic.jpg');
+    background-color:#8EE4AF;
+    background-image: url('../images/profile-white(1).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Title-Name{
