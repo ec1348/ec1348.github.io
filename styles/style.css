@@ -9,6 +9,12 @@
     src: url(../fonts/Oswald-Regular.ttf) format("truetype");
 }
 
+* {
+    box-sizing: border-box;
+}
+             
+
+
 /* Base style */
 body{
     font: 1em/1.5 'Roboto Condensed', Helvetica, Arial, sans-serif;
@@ -53,26 +59,18 @@ a:active {
 /*----- Main styles->main-header<- -----*/
 .main-header{
     margin-top: 0px;
-    text-align: center;
-    background-color:#8EE4AF;
-    background-image: url('../images/profile-white(1).png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.Title-Name{
-    color:white;
-    font-size: 80px;
-    margin-top: 60px;
-    margin-bottom: 100px;
-}
+.main-nav{
+    background-color: white;
+    height: 10vh;
+} 
 
 .main-nav ul{
     text-align: end;
     font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 0;
-    padding-top: 10px;
+    margin: 0;
+    padding: 10px;
     font-size: 25px;
 }
 
@@ -85,12 +83,57 @@ a:active {
     padding: 0 10px;
 }
 
-.main-footer{
-    background-color:darkgray;
-    text-align: center;
-    padding: 10px;
-    margin:auto
+.logo-name{
+    font-size: 25px;
+    float: left;
+    padding: 10px 10px 10px 30px;
+    margin: 0px;
 }
+
+/*----- Main styles->home-page<- -----*/
+.home-page{
+    background-color:#8EE4AF ;/* #8EE4AF */ /* #2E9454 */ /* #61CA88 */
+    background-image: url('../images/profile-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+
+.brief-intro{
+    text-align: center;
+}
+
+.Title-Name{
+    text-align: center;
+    color:white;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.home-page-readmore{
+    text-align: right;
+}
+
+.container-readmore{
+    padding: 5px 20px;
+    float: right;
+    background-color: #05386B;
+    border-radius: 30px;
+}
+.container-readmore a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* ----- Main styles->Education<- -----
+
+.introduction{
+    text-align: center;
+    padding: 0px 100px;
+} */
 
 /*----- Main styles->Education<- -----*/
 
@@ -143,20 +186,26 @@ a:active {
     }
 /*----- Main styles->Hobby<- -----*/
 
-/* Layout styles */
+/*----- Main styles->main-footer<- -----*/
 
-h1{ 
-    float: left;
-    width: 40%;
+.main-footer{
+    background-color:darkgray;
+    text-align: center;
+    padding: 10px;
+    margin:auto
 }
 
-.container-intro{
-    width: 40%;
-    float: right;
+/* Layout styles */
+.home-page{
+    height: 90vh;
+}
+.title-discription{ 
+    padding: 30px;
+    float: left;
+    width: 50%;
 }
 
 .main-header{
-    height: 100vh;
     padding-top: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
