@@ -116,14 +116,15 @@ a:active {
 }
 
 .container-readmore{
-    padding: 5px 20px;
     float: right;
     background-color: #05386B;
     border-radius: 30px;
 }
 .container-readmore a{
+    padding: 5px 20px;
     text-decoration: none;
     color: white;
+    display: block;
 }
 
 
