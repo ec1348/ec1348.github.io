@@ -35,6 +35,10 @@ h3{
     font-weight:700;
 }
 
+a{
+    text-decoration: none;
+}
+
 .section{
     text-align: center;
 }
@@ -59,35 +63,34 @@ a:active {
 /*----- Main styles->main-header<- -----*/
 .main-header{
     margin-top: 0px;
+    text-align: center;
+    background-color: white;
 }
 
-.main-nav{
-    background-color: white;
-    height: 10vh;
-} 
+.logo-name,
+.main-nav ul,
+.main-nav ul li{
+    display: inline-block;
+}
+
+.logo-name{
+    font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px 15px;
+    padding: 10px;
+    font-size: 25px;
+    float: left;
+}
 
 .main-nav ul{
-    text-align: end;
     font-family: 'Roboto Condensed',Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 10px;
     font-size: 25px;
-}
-
-.main-nav ul li{
-    display: inline;
+    float: right;
 }
 
 .main-nav ul li a{
-    text-decoration: none;
     padding: 0 10px;
-}
-
-.logo-name{
-    font-size: 25px;
-    float: left;
-    padding: 10px 10px 10px 30px;
-    margin: 0px;
 }
 
 /*----- Main styles->home-page<- -----*/
@@ -215,8 +218,18 @@ a:active {
 }
 
 /*-- Float clearfix --*/
-.group:after{
+.clearfix:after{
     content: "";
     display: table;
     clear:both;
+}
+
+@media ( max-width:720px ) {
+    .logo-name,
+    .main-nav ul,
+    .main-nav ul li{
+        display: block;
+        float: none;
+    }
+
 }
