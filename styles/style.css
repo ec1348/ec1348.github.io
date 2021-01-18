@@ -40,7 +40,9 @@ a{
 }
 
 .section{
+    margin: 50px;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* Pseudo-classes */
@@ -148,22 +150,26 @@ a:active {
 
 /*----- Main styles->Education<- -----*/
 
+.education h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .ed-usc,
 .ed-nl,
 .ed-ph{
-    width: 33%;
+    background-color: lightgray;
+    height:300px;
+    margin: 5px;
+    width: 32%;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.ed-usc{
-    float: left;
-}
-
-.ed-nl{
-    float: left;
-}
-
-.ed-ph{
-    float: left;
+.usc,
+.itm,
+.hbo-ict{
+    font-style:oblique;
 }
 
 /*----- Main styles->Experience<- -----*/
@@ -231,7 +237,10 @@ a:active {
     clear:both;
 }
 
-@media ( max-width:740px ) {
+@media ( max-width:739px ) {
+    .section{
+        margin: 20px;
+    }
     .logo-name,
     .main-nav ul,
     .main-nav ul li{
@@ -260,19 +269,44 @@ a:active {
     .introduction{
         text-align: center;
         padding: 0px 40px;
-    } 
+    }
+    
+    /*----- Main styles->Education<- -----*/
+    .ed-usc,
+    .ed-nl,
+    .ed-ph{
+        width: fit-content;
+        margin: 10px;
+    }
+    .education p{
+        padding: 0 50px;
+    }
 }
-@media (min-width:740px) and ( max-width : 1040px) {
-    /* ----- Main styles->Introduction<- ----- */
-    .container-intro{
+@media (min-width:740px) and ( max-width : 1020px) {
+    .section{
         margin: 20px;
+    }
+    /* ----- Main styles->Introduction<- ----- */
+        .container-intro{
         height: 60vh;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
     }
     .introduction{
         text-align: center;
         padding: 0px 50px;
     } 
+
+    /*----- Main styles->Education<- -----*/
+    .ed-usc{
+        float: left;
+        width: 48%;
+    }
+    .ed-nl{
+        float: right;
+        width: 48%;
+    }
+    .ed-ph{
+        width: 98%;
+        height: 200px;
+    }
 
 }
