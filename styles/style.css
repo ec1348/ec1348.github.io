@@ -173,7 +173,10 @@ a:active {
 }
 
 /*----- Main styles->Experience<- -----*/
-
+.expPhilippines,
+.expNetherlands{
+    display: inline-block;
+}
 /*----- Main styles->Projects<- -----*/
 .project-section{
     float: left;
@@ -191,7 +194,7 @@ a:active {
 /*----- Main styles->Skills & Languages<- -----*/
 .skill-section,
 .language-section{
-    width: 50%;
+    width: 30%;
 }
     /*----- Main styles->Skills<- -----*/
     .skill-section{
