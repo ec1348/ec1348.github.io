@@ -120,18 +120,19 @@ a:active {
     text-align: right;
 }
 
-.container-readmore{
+.container-readmore,
+.container-viewPicture{
     float: right;
     background-color: #05386B;
     border-radius: 30px;
 }
-.container-readmore a{
+.container-readmore a,
+.container-viewPicture a{
     padding: 5px 20px;
     text-decoration: none;
     color: white;
     display: block;
 }
-
 
 
 /* ----- Main styles->Introduction<- ----- */
@@ -176,7 +177,33 @@ a:active {
 .expPhilippines,
 .expNetherlands{
     display: inline-block;
+    width: 50%;
+    padding: 10px;
 }
+
+.expNetherlands{
+    float: right;
+}
+.expPhilippines{
+    float: left;
+}
+
+.world-explorer-container p{
+    padding: 10px;
+}
+
+.dutchpicture{
+    width: 100%;
+}
+
+.VEGP{
+    padding: 10px;
+}
+
+.VEGP p{
+    padding: 0px 100px;
+}
+
 /*----- Main styles->Projects<- -----*/
 .project-section{
     float: left;
@@ -285,6 +312,24 @@ a:active {
         padding: 0 50px;
     }
 }
+
+@media (max-width: 900px){
+    .expPhilippines,
+    .expNetherlands{
+        float: none;
+        width: fit-content;
+    }
+
+    .container-viewPicture{
+        float: none;
+    }
+
+    .VEGP p{
+        padding: 0px 10px;
+    }
+
+}
+
 @media (min-width:740px) and ( max-width : 1020px) {
     .section{
         margin: 20px;
