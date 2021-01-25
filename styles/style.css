@@ -42,7 +42,6 @@ a{
 .section{
     margin: 50px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 /* Pseudo-classes */
@@ -212,34 +211,36 @@ a:active {
 }
 
 /*----- Main styles->Projects<- -----*/
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .project-section{
-    float: left;
-    width: 25%;
+    position: relative;
 }
 
 .portfolio-photo,
-.shoppingweb-photo,
-.coffeeblog-photo,
+.shopping-web-photo,
+.Business-Web-photo,
 .photographic-photo{
+    filter: brightness(50%);
     width: 300px;
     height: 300px;
 }
 
-/*----- Main styles->Skills & Languages<- -----*/
-.skill-section,
-.language-section{
-    width: 30%;
+.project-title{
+    z-index: 10;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top:30%;
+    font-size: 2rem;
 }
-    /*----- Main styles->Skills<- -----*/
-    .skill-section{
-        float: left;
-    }
-    /*----- Main styles->Languages<- -----*/
-    .language-section{
-        float: right;
-    }
-/*----- Main styles->Hobby<- -----*/
-
 /*----- Main styles->main-footer<- -----*/
 
 .main-footer{
@@ -253,7 +254,7 @@ a:active {
 .home-page{
     height: 90vh;
 }
-.title-discription{ 
+.title-description{ 
     padding: 30px;
     float: left;
     width: 50%;
@@ -284,7 +285,7 @@ a:active {
         display: block;
         float: none;
     }
-    .title-discription {
+    .title-description {
         padding: 60px 30px 30px 20px;
         float: none;
         width: 100%;
@@ -300,7 +301,6 @@ a:active {
     .container-intro{
         margin: 20px;
         height: 80vh;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 7px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
     }
     .introduction{
@@ -317,6 +317,21 @@ a:active {
     }
     .education p{
         padding: 0 50px;
+    }
+
+    /*----- Main styles->Projects<- -----*/
+    .portfolio-photo,
+    .shopping-web-photo,
+    .Business-Web-photo,
+    .photographic-photo{
+        width: 400px;
+        height: 400px;
+    }
+    .project-title{
+        font-weight: 1000;
+        margin: 0;
+        top:30%;
+        font-size: 2.5rem;
     }
 }
 
@@ -362,6 +377,26 @@ a:active {
     .ed-ph{
         width: 98%;
         height: 200px;
+    }
+    /*----- Main styles->Projects<- -----*/
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .portfolio-photo,
+    .shopping-web-photo,
+    .Business-Web-photo,
+    .photographic-photo{
+        width: 300px;
+        height: 300px;
+    }
+    .project-title{
+        font-weight: 900;
+        margin: 0;
+        top:30%;
+        font-size: 2rem;
     }
 
 }
